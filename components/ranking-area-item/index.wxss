@@ -1,0 +1,68 @@
+/* components/ranking-area-item/index.wxss */
+.ranking-area-item {
+  width: 100%;
+  display: flex;
+  background-color: #eaebeb;
+  margin-bottom: 20rpx;
+  border-radius: 20rpx;
+  transform: translateY(0);
+}
+
+.left {
+  width: 67%;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+
+.left .name {
+  font-weight: 500;
+}
+
+.right {
+  width: 33%;
+  position: relative;
+}
+
+.right .image {
+  vertical-align: top;
+  width: 100%;
+  border-top-right-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+
+.songs {
+  display: flex;
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.song {
+  display: flex;
+  font-size: 25rpx;
+  white-space: nowrap;
+}
+
+.song .song-name {
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.song .song-artist {
+  padding-left: 5rpx;
+  color: #a2a2a2;
+}
+
+.right .play-count {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #ffffff;
+  font-size: 24rpx;
+  padding: 5rpx 6rpx;
+  border-radius: 20rpx;
+  background-color: #225158;
+  opacity: 0.7;
+}

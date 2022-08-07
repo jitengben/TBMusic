@@ -1,0 +1,21 @@
+<!--components/navigation-bar/index.wxml-->
+<view class="nav">
+  <view class="status" style="height:{{statusBarHeight}}px"></view>
+  <view class="nav-bar">
+    <view class="left" bindtap="handleLeftClick">
+      <view class="left-slot">
+        <slot name="left"></slot>
+      </view>
+      <view class="left-arrow">
+        <image class="left-icon" mode="widthFix" src="/assets/images/icons/arrow-left.png"></image>
+      </view>
+    </view>
+    <view class="center">
+      <view class="title-slot">
+        <slot name="center"></slot>
+      </view>
+      <view class="title">{{title}}</view>
+    </view>
+    <view class="right"></view>
+  </view>
+</view>
